@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
+body {
+  background: linear-gradient(-45deg, #006d77, #e63947e1, #006d77);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+lottie-player {
+  width: 450px;
+  height: 450px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.page {
+  height: 98vh;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.two .small {
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+}
+
+li {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.5rem;
+  margin: 30px;
+}
