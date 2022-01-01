@@ -72,3 +72,21 @@ li {
   font-size: 1.5rem;
   margin: 30px;
 }
+
+@media (max-width: 768px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
+  lottie-player {
+    width: 200px;
+    height: 200px;
+  }
+  h1 {
+    font-size: 120%;
+  }
+  li {
+    font-size: 80%;
+    margin: 15px;
+  }
+}
