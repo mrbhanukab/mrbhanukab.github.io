@@ -1,111 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/main.css" />
-    <script src="./Scripts/script.js"></script>
-    <link rel="icon" href="./images/me.jpeg" />
-    <meta name="theme-color" content="#1d3557" />
-    <meta name="msapplication-navbutton-color" content="#1d3557" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1d3557" />
-    <title>Hello World! I am Mr.Bhanuka.</title>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="servicesBox">
-        <div class="icon" style="--i: #4eb7ff">
-          <ion-icon name="person-outline"></ion-icon>
-        </div>
-        <div class="content">
-          <h2>I Am Bhanuka.</h2>
-          <p>
-            Hello, I am Bhanuka Bandara & I am
-            <script>
-              document.write(DiffYear);
-            </script>
-            Old. I am studying at Isipathana College 💚. I live in Sri Lanka.
-          </p>
-        </div>
-      </div>
-      <div class="servicesBox">
-        <div class="icon" style="--i: #fd6494">
-          <ion-icon name="heart-outline"></ion-icon>
-        </div>
-        <div class="content">
-          <h2>I Love</h2>
-          <p>
-            Web Development, Programming, IoT, Electronics, Robotics, Linux
-            Scripting, Astronomy, Sky Observation
-          </p>
-        </div>
-      </div>
-      <div class="servicesBox">
-        <div class="icon" style="--i: #43f390">
-          <ion-icon name="code-slash-outline"></ion-icon>
-        </div>
-        <div class="content">
-          <h2>My Projects</h2>
-          <p>
-            <a href="https://mrbhanukab.github.io/newos/">Project "newos"</a>
-          </p>
-        </div>
-      </div>
-      <div class="servicesBox">
-        <div class="icon" style="--i: #ffb508">
-          <ion-icon name="telescope-outline"></ion-icon>
-        </div>
-        <div class="content">
-          <h2>Things I am studying</h2>
-          <p>
-            Web Designing | JS Frameworks | Frontend Development | Astronomy |
-            Physics | Maths | Chemestry | Electronics
-          </p>
-        </div>
-      </div>
-      <div class="servicesBox">
-        <div class="icon" style="--i: #37ba82">
-          <ion-icon name="call-outline"></ion-icon>
-        </div>
-        <div class="content">
-          <h2>Contact Me On</h2>
-          <p>
-            <a href="https://wa.me/94767733492">WhatsApp</a> |
-            <a href="https://t.me/mrbhanuka">Telegram</a> |
-            <a href="mailto:mrbhanuka@outlook.com">Email</a>
-          </p>
-        </div>
-      </div>
-      <div class="servicesBox">
-        <div class="icon" style="--i: #cd57ff">
-          <ion-icon name="share-social-outline"></ion-icon>
-        </div>
-        <div class="content">
-          <h2>Follow Me On</h2>
-          <p>
-            <a href="https://www.instagram.com/_mr.bhanuka_/">Instagram</a> |
-            <a href="https://twitter.com/mrbhanuka">Twitter</a> |
-            <a href="https://github.com/mrbhanukab">Github</a> |
-            <a href="https://www.reddit.com/user/mr-bhanuka/">Reddit</a><br />
-            <a href="https://stackoverflow.com/users/16230406/mr-bhanuka"
-              >Stackoverflow</a
-            >
-            |
-            <a href="https://www.linkedin.com/in/bhanuka-bandara-8a209420a/"
-              >Linkedin</a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    background-color: black; /* Sets the background of the page to black */
+    margin: 0; /* Removes default body margin */
+    display: flex; /* Use flexbox for easy centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    overflow: hidden; /* Prevents scrollbars if video is slightly larger than expected */
+  }
+
+  #myVideo {
+    max-height: 100vh; /* Video height will not exceed the viewport height */
+    max-width: 100vw;  /* Video width will not exceed the viewport width */
+    width: auto;       /* Allow width to scale proportionally */
+    height: auto;      /* Allow height to scale proportionally */
+    object-fit: contain; /* This is the key: scales to fit without cropping, adding black bars if necessary */
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="csoon.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+</body>
 </html>
